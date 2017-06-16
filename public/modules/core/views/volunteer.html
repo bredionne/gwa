@@ -1,0 +1,21 @@
+<section class="container">
+  <h1 class="page-title">Volunteer</h1>
+  <div class="row volunteer-row">
+    <div class="col-md-6 form-div">
+      <br/>
+      <input class="volunteer" type="text" placeholder="Name" ng-model="name"/>
+      <input class="volunteer" type="text" placeholder="Email" ng-model="email"/>
+      <p class="h3 volunteer-head">How did you hear about us?</p>
+      <select class="dropdown" ng-model="selectedVolOption" ng-options="volOption.id as volOption.name for volOption in volOptions"></select>
+      <div class="submit">
+        <button class="btn btn-lg" ng-click="submitInfo(name, email, selectedVolOption, travelHistory, volHistory, contribute);">Submit</button>
+      </div>
+    </div>
+    <div class="col-md-6 form-div">
+      <br/>
+      <textarea class="volunteer" placeholder="Travel history" ng-model="travelHistory"></textarea>
+      <textarea class="volunteer" placeholder="Volunteer travel history" ng-model="volHistory"></textarea>
+      <textarea class="volunteer" placeholder="How can you contribute?" ng-model="contribute"></textarea>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<section class="container">
+  <h1 class="page-title">Gallery</h1>
+  <div id="gallery-carousel">
+    <div uib-carousel active="active" interval="5000" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="$index">
+        <img ng-src="{{slide.image}}"/>
+      </div>
+    </div>
+  </div>
+</section>
